@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <nav class="cabecalho">
+        
+        <a class="filho" id="logo" href="#">TO-DO netLIST!</a>
+        
+        <h3 class="filho" id="escolha">Escolha o mês: </h3>
+
+        <select class="filho" id="select"  itemname="seleção" id="selection">
+            
+            <option value="julho">Julho</option>
+            <option value="agosto">Agosto</option>
+            <option value="setembro">Setembro</option>
+            <option value="outubro">Outubro</option>
+            <option value="novembro">Novembro</option>
+            <option value="dezembro">Dezembro</option>
+            
+        </select>
+
+        <h3 class="filho"  id="contato">Contato</h3>
+
+    </nav>
+
+    <div id="input">
+
+        <h3 class="programacao">Registrar Tarefas:</h3>
+        <input type="date" name="data" id="data" class="filho-input" \>
+        <input type="text" name="tarefa" id="tarefa" class="filho-input" \>
+        <input type="submit" name="submeter" id="submeter" class="filho-input" \>
+
+    </div>
+
+    <div id="mes">
+        <h3 class="mes">Julho</h3>
+    </div>
+    
+    <section id="agenda">
+    
+        <ul class="lista" id="lista-tarefas">
+            <!-- Os itens de tarefas serão adicionados aqui -->
+        </ul>
+    
+    </section>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
